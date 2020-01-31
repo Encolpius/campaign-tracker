@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 /*# Normalize */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -83,7 +85,7 @@ table {
 
 .hero-image__sm {
   background-image: url('https://media.dnd.wizards.com/styles/story_banner/public/images/head-banner/Saltmarsh_DnD_Articles_Header-Image.jpg');
-  background-position: 60%;
+  background-position: 45%;
 }
 
 .hero-image__tomb {
@@ -108,6 +110,44 @@ table {
   text-align: center;
 }
 
+.tabcontent {
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 80px;
+  background-color: white;
+  width: 474px;
+  height: 280px;
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay__left {
+  left: 40px;
+  border-left: 3px solid steelblue;
+}
+
+.overlay__right {
+  right: 60px;
+  border-right: 3px solid steelblue;
+}
+
+.hero-overlay h2 {
+  color: rgb(74, 74, 74);
+  font-weight: 700;
+}
+
+.hero-description {
+  height: 100%;
+  padding: 30px 35px;
+}
+
+.hero-description p {
+  color: rgb(74, 74, 74);
+  line-height: 28px;
+  margin-bottom: 20px;
+}
 
 /*# About */
 
@@ -127,6 +167,11 @@ h2 {
   font-size: 26px;
 }
 
+p {
+  font-size: 16px;
+  margin: 16px 0px;
+}
+
 em {
   font-style: italic;
 }
@@ -143,4 +188,21 @@ a {
 a:hover {
   color: red;
   transition: 0.3s
+}
+
+
+.hero-link {
+  padding: 13px 0;
+}
+
+.hero-campaign-link {
+  color: white;
+  background-color: steelblue;
+  padding: 13px;
+  border-radius: 6px;
+}
+
+.hero-campaign-link:hover {
+  color: #fff;
+  filter: brightness(85%);
 }
