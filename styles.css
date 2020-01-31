@@ -1,0 +1,146 @@
+/*# Normalize */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #f9f9f9;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+/*# Hero */
+
+.container {
+  max-width: 1200px;
+  margin-top: 60px;
+  margin: 60px auto;
+  padding: 0 16px 0 16px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.hero h1 {
+  text-align: center;
+}
+
+.hero-title {
+  height: 60px;
+}
+
+
+.hero-image {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-image__sm {
+  background-image: url('https://media.dnd.wizards.com/styles/story_banner/public/images/head-banner/Saltmarsh_DnD_Articles_Header-Image.jpg');
+  background-position: 60%;
+}
+
+.hero-image__tomb {
+  background-image: url('https://media.dnd.wizards.com/styles/story_banner/public/images/head-banner/65DX_ToA_LiveEvent_Home_Sub-header.jpg');
+}
+
+.hero-image__conflux {
+  background-image: url('https://66.media.tumblr.com/91cfffaab54c027eda5c97abb93f1e14/tumblr_inline_ozu1i0T8Wd1qdq19t_1280.jpg');
+  background-position: 100%;
+}
+
+.hero-campaign-tabs {
+  display: flex;
+}
+
+.hero-campaign-tabs > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  text-align: center;
+}
+
+
+/*# About */
+
+.about p {
+  margin: 10px;
+  text-align: center;
+}
+
+
+/*# Fonts */
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+em {
+  font-style: italic;
+}
+
+
+/*# Anchors */
+
+a {
+  text-decoration: none;
+  color: #5e6a71;
+  cursor: pointer;
+}
+
+a:hover {
+  color: red;
+  transition: 0.3s
+}

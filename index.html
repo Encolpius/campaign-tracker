@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero">
+                <div class="hero-title">
+                    <h1>D&D Campaign Tracker</h1>
+                </div>
+                <div class="hero-campaign-tabs">
+                    <div>
+                        <a onclick="changeTab('gos_tab')"><h2>The Ghosts of Saltmarsh</h2></a>
+                    </div>
+                    <div>
+                        <a onclick="changeTab('toa_tab')"><h2>Tomb of Annihilation</h2></a>
+                    </div>
+                    <div>
+                        <a onclick="changeTab('conflux_tab')"><h2>Conflux</h2></a>
+                    </div>
+                </div>
+                <div id="gos_tab" class="tabcontent hero-image hero-image__sm">
+
+                </div>
+                <div id="toa_tab" class="tabcontent hero-image hero-image__tomb">
+                    
+                </div>
+                <div id="conflux_tab" class="tabcontent hero-image hero-image__conflux">
+
+                </div>
+            </div>
+            <div class="about">
+                <p><em>Click on a campaign title for more information</em></p>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
