@@ -182,7 +182,7 @@ a {
   }
 
   .hero-campaign-tabs > div {
-    margin: 10px 0;
+    margin-bottom: 15px;
     border: 1px solid black;
     border-radius: 3px;
   }
@@ -194,6 +194,12 @@ a {
 }
 
 @media (max-width: 600px) {
+
+  .hero-title {
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
   .hero-overlay {
     position: static;
     background-color: rgb(249, 249, 249, 0.8);
@@ -209,6 +215,18 @@ a {
 
   .hero-description h2 {
     margin-bottom: 14px;
+  }
+
+  .hero-image__sm {
+    background-position: 57%;
+  }
+
+  .hero-image__tomb {
+    background-position: 71%;
+  }
+
+  .hero-image__conflux {
+    background-position: 30% 24%;
   }
   
 }
