@@ -62,41 +62,6 @@ table {
   padding: 0 16px 0 16px;
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.hero h1 {
-  text-align: center;
-}
-
-.hero-title {
-  height: 60px;
-}
-
-
-.hero-image {
-  height: 450px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.hero-image__sm {
-  background-image: url('https://media.dnd.wizards.com/styles/story_banner/public/images/head-banner/Saltmarsh_DnD_Articles_Header-Image.jpg');
-  background-position: 45%;
-}
-
-.hero-image__tomb {
-  background-image: url('https://media.dnd.wizards.com/styles/story_banner/public/images/head-banner/65DX_ToA_LiveEvent_Home_Sub-header.jpg');
-}
-
-.hero-image__conflux {
-  background-image: url('https://66.media.tumblr.com/91cfffaab54c027eda5c97abb93f1e14/tumblr_inline_ozu1i0T8Wd1qdq19t_1280.jpg');
-  background-position: 100%;
-}
-
 .hero-campaign-tabs {
   display: flex;
 }
@@ -134,30 +99,50 @@ table {
 }
 
 .hero-overlay h2 {
-  color: rgb(74, 74, 74);
   font-weight: 700;
 }
 
 .hero-description {
   height: 100%;
+  width: 474px;
   padding: 30px 35px;
 }
 
 .hero-description p {
-  color: rgb(74, 74, 74);
   line-height: 28px;
   margin-bottom: 20px;
 }
 
+.hero-link {
+  padding: 13px 0;
+}
+
+.hero-campaign-link {
+  color: white;
+  background-color: steelblue;
+  padding: 13px;
+  border-radius: 6px;
+}
+
+.hero-campaign-link:hover {
+  color: #fff;
+  filter: brightness(85%);
+}
+
+
 /*# About */
 
 .about p {
-  margin: 10px;
+  margin: 16px;
   text-align: center;
 }
 
 
 /*# Fonts */
+
+h1, h2, p {
+  color: rgb(74, 74, 74);
+}
 
 h1 {
   font-size: 42px;
@@ -185,24 +170,45 @@ a {
   cursor: pointer;
 }
 
-a:hover {
+.hero-campaign-tabs span:hover {
   color: red;
   transition: 0.3s
 }
 
+@media (max-width: 830px) {
+  .hero-campaign-tabs {
+    display: flex;
+    flex-direction: column;
+  }
 
-.hero-link {
-  padding: 13px 0;
+  .hero-campaign-tabs > div {
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+
+  .hero-image {
+    background-position: 50%;
+  }
+  
 }
 
-.hero-campaign-link {
-  color: white;
-  background-color: steelblue;
-  padding: 13px;
-  border-radius: 6px;
-}
+@media (max-width: 600px) {
+  .hero-overlay {
+    position: static;
+    background-color: rgb(249, 249, 249, 0.8);
+    border: none;
+    height: initial;
+    width: initial;
+    display: flex;
+  }
 
-.hero-campaign-link:hover {
-  color: #fff;
-  filter: brightness(85%);
+  .hero-description p {
+    display: none;
+  }
+
+  .hero-description h2 {
+    margin-bottom: 14px;
+  }
+  
 }

@@ -1,7 +1,36 @@
 $primary-color: red;
 
 .hero {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
+
+    h1 {
+        font-family: 'Lato', sans-serif;
+        text-align: center; 
+    }
 }
+
+.hero-title {
+height: 60px;
+}
+
+.hero-image {
+height: 450px;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.hero-image__sm {
+background-image: url('https://media.dnd.wizards.com/styles/story_banner/public/images/head-banner/Saltmarsh_DnD_Articles_Header-Image.jpg');
+background-position: 45%;
+}
+
+.hero-image__tomb {
+background-image: url('https://media.dnd.wizards.com/styles/story_banner/public/images/head-banner/65DX_ToA_LiveEvent_Home_Sub-header.jpg');
+}
+
+.hero-image__conflux {
+background-image: url('https://66.media.tumblr.com/91cfffaab54c027eda5c97abb93f1e14/tumblr_inline_ozu1i0T8Wd1qdq19t_1280.jpg');
+background-position: 100%;
+}
+
