@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Schoolbell|Lato&display=swap');
 
 /*# Normalize */
 html, body, div, span, applet, object, iframe,
@@ -165,15 +165,41 @@ table {
 }
 
 .col-sm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  margin: 12px;
+}
+
+.character-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  height: 400px;
+}
+
+.player-info {
+  list-style-type: none;
+}
+
+.player-info li {
+  margin: 10px 0;
+}
+
+.player-race {
+  font-family: 'Roboto Slab', serif;
+  font-size: 19px;
+}
+
+.player-class {
+  text-transform: uppercase;
+  font-family: 'Schoolbell', cursive;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .col-sm img {
-  width: 65%;
+  height: 75%;
+  max-height: 400px;
 }
 
 .col-sm h3 {
