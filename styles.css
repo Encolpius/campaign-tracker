@@ -152,7 +152,7 @@ table {
 .text__header {
   background-color: black;
   color: white;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .section-header span {
