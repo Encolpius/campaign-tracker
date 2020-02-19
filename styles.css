@@ -67,7 +67,7 @@ table {
   display: flex;
   flex-direction: column; }
   .hero h1 {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     text-align: center; }
 
 .hero-title {
@@ -105,7 +105,7 @@ table {
   top: 80px;
   background-color: white;
   width: 474px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   opacity: 0.8; }
   .hero-overlay h3 {
     font-weight: 700; }
@@ -147,22 +147,26 @@ table {
   text-align: center;
   color: white;
   margin: 30px 0; }
+  .section-header h2 {
+    text-transform: capitalize;
+    padding: 8px; }
+  .section-header span {
+    padding: 6.4px 16px; }
 
 .text__header {
   background-color: black;
   color: white;
   text-transform: uppercase; }
 
-.section-header span {
-  padding: 6.4px 16px; }
-
-.section-header h2 {
-  text-transform: capitalize;
-  padding: 8px; }
-
 .col-sm {
   text-align: center;
   margin: 12px; }
+  .col-sm img {
+    height: 80%;
+    max-height: 400px; }
+  .col-sm h3 {
+    padding: 8px;
+    margin: 10px 0; }
 
 .character-img {
   margin-top: 12px;
@@ -170,9 +174,8 @@ table {
 
 .player-info {
   list-style-type: none; }
-
-.player-info li {
-  margin: 10px 0; }
+  .player-info li {
+    margin: 10px 0; }
 
 .player-race {
   font-family: 'Roboto Slab', serif;
@@ -183,14 +186,6 @@ table {
   font-family: 'Schoolbell', cursive;
   font-size: 30px;
   font-weight: 700; }
-
-.col-sm img {
-  height: 80%;
-  max-height: 400px; }
-
-.col-sm h3 {
-  padding: 8px;
-  margin: 10px 0; }
 
 /*# Session Table */
 table {
@@ -204,7 +199,7 @@ thead {
   color: #fff;
   text-transform: uppercase;
   font-size: 26px;
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 td, th {
   padding: 15px;
@@ -212,7 +207,7 @@ td, th {
 
 td {
   font-size: 17px;
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 tr:nth-child(even) {
   background-color: #ddd; }
