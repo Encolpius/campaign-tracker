@@ -198,7 +198,7 @@ table {
 }
 
 .col-sm img {
-  height: 75%;
+  height: 80%;
   max-height: 400px;
 }
 
@@ -207,6 +207,36 @@ table {
   margin: 10px 0;
 }
 
+/*# Session Table */
+
+table {
+  margin-top: 25px;
+  width: 60%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+thead {
+  background-color: #18A8B9;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-family: 'Lato', sans-serif;
+}
+
+td, th  {
+  padding: 15px;
+  text-align: center;
+}
+
+td {
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
 
 /*# About */
 
@@ -302,6 +332,10 @@ a:hover {
     border: none;
     height: initial;
     width: 100%;
+  }
+
+  .hero-link {
+    margin: 12px 0;
   }
 
   .hero-description p {
