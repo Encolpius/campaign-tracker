@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Schoolbell|Lato&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab|Schoolbell|Lato&display=swap");
+.hero-title, .hero-campaign-tabs > div, .section-header, .character-img {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 /*# Normalize */
 html, body, div, span, applet, object, iframe,
@@ -19,71 +23,82 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
+
 body {
   line-height: 1;
-  background-color: #f9f9f9;
-}
+  background-color: #f9f9f9; }
+
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
+
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
+
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-}
-
+  box-sizing: border-box; }
 
 /*# Hero */
-
 .container {
   max-width: 1200px;
   margin: 25px auto;
-  padding: 0 16px 0 16px;
-}
+  padding: 0 16px 0 16px; }
 
 .hero-title {
-  margin: 18px;
+  margin: 18px; }
+
+.hero {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  flex-direction: column; }
+  .hero h1 {
+    font-family: 'Lato', sans-serif;
+    text-align: center; }
+
+.hero-title {
+  height: 60px; }
+
+.hero-image {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.hero-image__sm {
+  background-image: url("https://media.dnd.wizards.com/styles/story_banner/public/images/head-banner/Saltmarsh_DnD_Articles_Header-Image.jpg");
+  background-position: 45%; }
+
+.hero-image__tomb {
+  background-image: url("https://media.dnd.wizards.com/styles/story_banner/public/images/head-banner/65DX_ToA_LiveEvent_Home_Sub-header.jpg"); }
+
+.hero-image__conflux {
+  background-image: url("https://66.media.tumblr.com/91cfffaab54c027eda5c97abb93f1e14/tumblr_inline_ozu1i0T8Wd1qdq19t_1280.jpg");
+  background-position: 100%; }
 
 .hero-campaign-tabs {
-  display: flex;
-}
+  display: flex; }
 
 .hero-campaign-tabs > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 55px;
-  text-align: center;
-}
+  text-align: center; }
 
 .tabcontent {
-  position: relative;
-}
+  position: relative; }
 
 .hero-overlay {
   position: absolute;
@@ -91,271 +106,203 @@ table {
   background-color: white;
   width: 474px;
   font-family: 'Lato', sans-serif;
-  opacity: 0.8;
-}
+  opacity: 0.8; }
+  .hero-overlay h3 {
+    font-weight: 700; }
 
 .overlay__left {
   left: 40px;
-  border-left: 3px solid steelblue;
-}
+  border-left: 3px solid steelblue; }
 
 .overlay__right {
   right: 60px;
-  border-right: 3px solid steelblue;
-}
-
-.hero-overlay h3 {
-  font-weight: 700;
-}
+  border-right: 3px solid steelblue; }
 
 .hero-description {
   height: 100%;
-  padding: 30px 35px;
-}
-
-.hero-description p {
-  line-height: 28px;
-  margin-bottom: 20px;
-}
+  padding: 30px 35px; }
+  .hero-description p {
+    line-height: 28px;
+    margin-bottom: 20px; }
 
 .hero-link {
-  padding: 13px 0;
-}
+  padding: 13px 0; }
 
 .hero-campaign-link {
   color: white;
   background-color: steelblue;
   padding: 13px;
   border-radius: 6px;
-}
+  text-transform: uppercase; }
 
 .hero-campaign-link:hover {
   color: #fff;
-  filter: brightness(85%);
-}
+  filter: brightness(85%); }
 
 .active-campaign-span {
-  color: red;
-}
-
+  color: red; }
 
 /*# Sections */
-
 .section-header {
   text-align: center;
   color: white;
-  margin: 30px 0;
-  display: flex;
-  justify-content: center;
-}
+  margin: 30px 0; }
 
 .text__header {
   background-color: black;
   color: white;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .section-header span {
-  padding: 6.4px 16px;
-}
+  padding: 6.4px 16px; }
 
 .section-header h2 {
   text-transform: capitalize;
-  padding: 8px;
-}
+  padding: 8px; }
 
 .col-sm {
   text-align: center;
-  margin: 12px;
-}
+  margin: 12px; }
 
 .character-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 12px;
-  height: 400px;
-}
+  height: 400px; }
 
 .player-info {
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 .player-info li {
-  margin: 10px 0;
-}
+  margin: 10px 0; }
 
 .player-race {
   font-family: 'Roboto Slab', serif;
-  font-size: 19px;
-}
+  font-size: 19px; }
 
 .player-class {
   text-transform: uppercase;
   font-family: 'Schoolbell', cursive;
   font-size: 30px;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 .col-sm img {
   height: 80%;
-  max-height: 400px;
-}
+  max-height: 400px; }
 
 .col-sm h3 {
   padding: 8px;
-  margin: 10px 0;
-}
+  margin: 10px 0; }
 
 /*# Session Table */
-
 table {
   margin-top: 25px;
   width: 60%;
   border-collapse: collapse;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 thead {
   background-color: #18A8B9;
   color: #fff;
   text-transform: uppercase;
   font-size: 26px;
-  font-family: 'Lato', sans-serif;
-}
+  font-family: 'Lato', sans-serif; }
 
-td, th  {
+td, th {
   padding: 15px;
-  text-align: center;
-}
+  text-align: center; }
 
 td {
   font-size: 17px;
-  font-family: 'Lato', sans-serif;
-}
+  font-family: 'Lato', sans-serif; }
 
 tr:nth-child(even) {
-  background-color: #ddd;
-}
+  background-color: #ddd; }
 
 /*# About */
-
 .about p {
   margin: 16px;
-  text-align: center;
-}
-
+  text-align: center; }
 
 /*# Fonts */
-
 h1, h2, h3, p {
-  color: rgb(74, 74, 74);
-}
+  color: #4a4a4a; }
 
 h1 {
-  font-size: 42px;
-}
+  font-size: 42px; }
 
 h2 {
-  font-size: 32px;
-}
+  font-size: 32px; }
 
 h3 {
-  font-size: 26px;
-}
+  font-size: 26px; }
 
 h4 {
   font-size: 22px;
-  margin: 12px 0;
-}
-
+  margin: 12px 0; }
 
 p {
   font-size: 16px;
-  margin: 16px 0px;
-}
+  margin: 16px 0px; }
 
 em {
-  font-style: italic;
-}
-
+  font-style: italic; }
 
 /*# Anchors */
-
 a {
   text-decoration: none;
   color: #5e6a71;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 a:hover {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .hero-campaign-tabs span:hover {
   color: red;
-  transition: 0.3s
-}
+  transition: 0.3s; }
 
 @media (max-width: 830px) {
   .hero-campaign-tabs {
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   .hero-campaign-tabs > div {
     margin-bottom: 16px;
     border: 1px solid black;
-    border-radius: 3px;
-  }
+    border-radius: 3px; }
 
   .hero-image {
-    background-position: 50%;
-  }
-  
-}
-
+    background-position: 50%; } }
 @media (max-width: 600px) {
-
   .hero-title {
     height: 100%;
     padding: 6px;
-    margin-bottom: 20px;
-  }
+    margin-bottom: 20px; }
 
   .hero-overlay {
     position: absolute;
     top: auto;
     left: 0;
     bottom: 0;
-    background-color: rgb(249, 249, 249, 0.8);
+    background-color: #f9f9f9;
     border: none;
     height: initial;
-    width: 100%;
-  }
+    width: 100%; }
 
   .hero-link {
-    margin: 12px 0;
-  }
+    margin: 12px 0; }
 
   .hero-description p {
-    display: none;
-  }
+    display: none; }
 
   .hero-description h2 {
-    margin-bottom: 14px;
-  }
+    margin-bottom: 14px; }
 
   .hero-image__sm {
-    background-position: 57% 90%;
-  }
+    background-position: 57% 90%; }
 
   .hero-image__tomb {
-    background-position: 71%;
-  }
+    background-position: 71%; }
 
   .hero-image__conflux {
-    background-position: 25% 50%;
-  }
-  
-}
+    background-position: 25% 50%; } }
+
+/*# sourceMappingURL=styles.css.map */
