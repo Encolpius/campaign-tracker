@@ -255,6 +255,9 @@ a {
 a:hover {
   text-decoration: none; }
 
+.hero {
+  margin-bottom: 35px; }
+
 .hero-campaign-tabs span:hover {
   color: red;
   transition: 0.3s; }
