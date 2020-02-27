@@ -67,6 +67,7 @@ body {
 
 .hero {
   display: flex;
+  margin-bottom: 35px;
   flex-direction: column; }
   .hero h1 {
     font-family: "Lato", sans-serif;
@@ -254,9 +255,6 @@ a {
 
 a:hover {
   text-decoration: none; }
-
-.hero {
-  margin-bottom: 35px; }
 
 .hero-campaign-tabs span:hover {
   color: red;
