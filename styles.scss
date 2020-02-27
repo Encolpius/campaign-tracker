@@ -187,7 +187,7 @@ background-position: 100%;
 
   h2 {
     text-transform: capitalize;
-    padding: 8px;
+    padding: 15px;
   }
 
   span {
@@ -206,7 +206,7 @@ background-position: 100%;
   margin: 12px;
 
   img {
-    height: 80%;
+    height: 75%;
     max-height: 400px;
   };
 
@@ -214,6 +214,10 @@ background-position: 100%;
     padding: 8px;
     margin: 10px 0;
   }
+}
+
+.col-sm img:hover {
+  height: 82%;
 }
 
 .character-img {

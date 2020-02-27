@@ -149,7 +149,7 @@ table {
   margin: 30px 0; }
   .section-header h2 {
     text-transform: capitalize;
-    padding: 8px; }
+    padding: 15px; }
   .section-header span {
     padding: 6.4px 16px; }
 
@@ -162,11 +162,14 @@ table {
   text-align: center;
   margin: 12px; }
   .col-sm img {
-    height: 80%;
+    height: 75%;
     max-height: 400px; }
   .col-sm h3 {
     padding: 8px;
     margin: 10px 0; }
+
+.col-sm img:hover {
+  height: 82%; }
 
 .character-img {
   margin-top: 12px;
