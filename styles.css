@@ -167,8 +167,7 @@ body {
     height: 80%;
     max-height: 400px; }
   .col-sm h3 {
-    padding: 8px;
-    margin: 10px 0; }
+    padding: 8px; }
 
 .col-sm img:hover {
   height: 93%; }
